@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    color: #e2e8f0;
+    background-color: #191a1a;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+header {
+    padding: 2rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(25, 26, 26, 0.95);
+    backdrop-filter: blur(8px);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Instrument Serif', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: -0.5px;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #22d3ee;
+}
+
+.hero {
+    padding: 8rem 0 6rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Instrument Serif', serif;
+    font-size: 4.5rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.hero-subtext {
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
+    color: #94a3b8;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
+}
+
+.search-bar-mock {
+    max-width: 700px;
+    margin: 0 auto 4rem;
+    background: #252626;
+    border: 1px solid #333;
+    padding: 1.25rem 1.5rem;
+    border-radius: 99px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #64748b;
+    cursor: text;
+    transition: all 0.2s ease;
+}
+
+.search-bar-mock:hover {
+    border-color: #444;
+    background: #2a2b2b;
+}
+
+.search-arrow {
+    background: #333;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 24px;
+    height: 44px;
+    text-decoration: none;
+    border-radius: 99px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #22d3ee;
+    color: #0f172a;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #67e8f9;
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #94a3b8;
+    border: 1px solid #333;
+}
+
+.btn-secondary:hover {
+    border-color: #555;
+    color: #fff;
+}
+
+.features {
+    padding: 4rem 0;
+    border-top: 1px solid #262626;
+}
+
+.features .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+}
+
+.feature-card {
+    padding: 1rem;
+}
+
+.feature-card h3 {
+    font-family: 'Instrument Serif', serif;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    color: #22d3ee;
+}
+
+.feature-card p {
+    color: #94a3b8;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.cta {
+    padding: 8rem 0;
+    text-align: center;
+    background: radial-gradient(circle at center, rgba(34, 211, 238, 0.05) 0%, transparent 70%);
+}
+
+.cta h2 {
+    font-family: 'Instrument Serif', serif;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+footer {
+    padding: 3rem 0;
+    border-top: 1px solid #262626;
+    color: #64748b;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-links a {
+    color: #64748b;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.social-links a:hover {
+    color: #22d3ee;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+    
+    .hero-subtext {
+        font-size: 1.1rem;
+    }
+
+    nav {
+        display: none;
+    }
+    
+    .search-bar-mock {
+        margin-bottom: 3rem;
+    }
+}
